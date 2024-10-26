@@ -146,16 +146,16 @@
 
 
 // **** array.filter => là hàm được sử dụng nhiều thứ 2 sau map trong js
-// lọc mảng theo điều kiện được cho ở hàm return, kết quả lọc là một 
+// lọc mảng theo điều kiện được cho ở hàm return, kết quả lọc là một
 // mảng mới được sinh ra
 
-let special = [
-    { name: "Phong", age: 24, gender: "male" },
-    { name: "Phong1", age: 34, gender: "female" },
-    { name: "Phong2", age: 25, gender: "male" },
-    { name: "Phong3", age: 54, gender: "female" },
-    { name: "Phong4", age: 45, gender: "undefined" },
-];
+// let special = [
+//     { name: "Phong", age: 24, gender: "male" },
+//     { name: "Phong1", age: 34, gender: "female" },
+//     { name: "Phong2", age: 25, gender: "male" },
+//     { name: "Phong3", age: 54, gender: "female" },
+//     { name: "Phong4", age: 45, gender: "undefined" },
+// ];
 
 // let filterArr = special.filter((x, index) => {
 //     return x.age > 30 && x.gender === "male"
@@ -167,32 +167,47 @@ let special = [
 // lọc mảng theo điều kiện được cho ở hàm return, kết quả lọc là một
 // phần tử thỏa điều kiện trong mảng
 
-let findArr = special.find((x, index) => {
-    return x.age > 30 && x.gender === "female"
-})
+// let findArr = special.find((x, index) => {
+//     return x.age > 30 && x.gender === "female"
+// })
 
-console.log(findArr);
-
-
-
-const a = { name: "Phong2", age: 25, gender: "male" }
-const t = `toi ten la: ${a.name}`
-// template string // template literal
-// cách viết cho phép truyền một biến vào trong chuỗi 
-
-let arr = [22, 43, 54, 62, 11]; // ds các tuổi 
-let arr1 = ['phong', 'Hoa', 'abc', 'xyz', 'lalala']; // ds các tuổi 
-// in ra câu ' tôi tên là ..., tôi đã ... tuổi'
-arr.forEach((x, index) => {
-    const text = `tôi tên là ${arr1[index]}, tôi đã ${x} tuổi`
-    console.log(text);
-
-    // console.log('tôi đã ' + x + ' ' + 'tuổi');
-
-})
+// console.log(findArr);
 
 
 
+// const a = { name: "Phong2", age: 25, gender: "male" }
+// const t = `toi ten la: ${a.name}`
+// // template string // template literal
+// // cách viết cho phép truyền một biến vào trong chuỗi
 
+// let arr = [22, 43, 54, 62, 11]; // ds các tuổi
+// let arr1 = ['phong', 'Hoa', 'abc', 'xyz', 'lalala']; // ds các tuổi
+// // in ra câu ' tôi tên là ..., tôi đã ... tuổi'
+// arr.forEach((x, index) => {
+//     const text = `tôi tên là ${arr1[index]}, tôi đã ${x} tuổi`
+//     console.log(text);
+
+//     // console.log('tôi đã ' + x + ' ' + 'tuổi');
+
+// })
+
+// **** array.some
+// kiểm tra trong mảng xem có tối thiểu phần tử nào thỏa điều kiện không có => true <> false
+
+// let special = [
+//     { name: "Phong", age: 24, gender: "male" },
+//     { name: "Phong1", age: 34, gender: "female" },
+//     { name: "Phong2", age: 25, gender: "male" },
+//     { name: "Phong3", age: 54, gender: "female" },
+//     { name: "Phong4", age: 45, gender: "undefined" },
+// ];
+
+
+// javascript => không báo lỗi
+// eslint => kiểm tra lỗi
+
+// package.json
+// **** array.every
+// kiểm tra trong mảng xem tất cả phần tử nào thỏa điều kiện không có => true <> false
 
 
